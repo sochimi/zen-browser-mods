@@ -1,0 +1,12 @@
+@-moz-document url-prefix("chrome:") {
+  /* Some comment */
+  
+  :root {
+    --newtab-highlight-color: var(--zen-primary-color);
+    --newtab-highlight-blur: 6px;
+    --newtab-highlight-border: 0px;
+  }
+
+  :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="red"]) {
+    --newtab-highlight-color: red;
+}

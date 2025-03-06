@@ -1,0 +1,64 @@
+[
+    {
+        "property": "uc.newtab-urlbar-highlighting.border-color",
+	"label": "Border Color:",
+	"type": "dropdown",
+	"defaultValue": "--zen-primary-color",
+	"options": [
+            {
+                "label": "Zen Theme Color",
+		"value": "--zen-primary-color"
+	    },
+	    {
+		"label": "Red",
+		"value": "red"
+	    },
+	    {
+		"label": "Purple",
+		"value": "purple"
+	    },
+            {
+                 "label": "Blue",
+                 "value": "blue"
+            },
+            {
+                 "label": "Teal",
+                 "value": "teal"
+            },
+            {
+                 "label": "Green",
+                 "value": "green"
+            },
+            {
+                 "label": "Yellow",
+                 "value": "yellow"
+            },
+            {
+                 "label": "Orange",
+                 "value": "orange"
+            },
+            {
+                 "label": "Brown",
+                 "value": "brown"
+            },
+            {
+                 "label": "Pink",
+                 "value": "pink"
+            }
+	]
+    },
+    {
+	"propterty": "uc.newtab-urlbar-highlighting.border-blur",
+	"label": "Blur Radius (e.g. '6px'):",
+	"type": "string",
+	"placeholder": "Default: 6px",
+	"defaultValue": "6px"
+    },
+    {
+	"property": "uc.newtab-urlbar-highlighting.border-radius",
+	"label": "Border Radius (e.g. '1px'):",
+	"type": "string",
+	"placeholder": "Default: 0px",
+	"defaultValue": "0px"
+    }
+]
