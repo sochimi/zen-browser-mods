@@ -1,24 +1,29 @@
 @-moz-document url-prefix("chrome:") {
-  /* Still work in progress */
+    /* Still work in progress */
+    
+    :root {
+        --newtab-highlight-color: var(--zen-primary-color); /* check if it really is the wanted variable */
+        /* --newtab-highlight-blur: 6px; */
+        /* --newtab-highlight-border: 0px; */
+    }
   
-  :root {
-    --newtab-highlight-color: var(--zen-primary-color);
-    --newtab-highlight-blur: 6px;
-    /* --newtab-highlight-border: 0px; */
-  }
-
-  :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="--zen-primary-color"]) { --newtab-highlight-color: var(--zen-primary-color); }
-  :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="red"]) { --newtab-h    ighlight-color: red; }
-  :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="purple"]) { --newtab-h    ighlight-color: purple; }
-  :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="blue"]) { --newtab-h    ighlight-color: blue; }
-  :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="teal"]) { --newtab-h    ighlight-color: teal; }
-  :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="green"]) { --newtab-h    ighlight-color: green; }
-  :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="yellow"]) { --newtab-h    ighlight-color: yellow; }
-  :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="orange"]) { --newtab-h    ighlight-color: orange; }
-  :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="brown"]) { --newtab-h    ighlight-color: brown; }
-  :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="pink"]) { --newtab-h    ighlight-color: pink; }
-
-  #urlbar[zen-newtab="true"] #urlbar-background {
-    box-shadow: 0px 0px --uc-newtab-urlbar-highlighting-border-blur --uc-newtab-urlbar-highlighting-border-radius var(--uc-newtab-urlbar-highlighting-border-color) !important;
-  }
+    :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="--zen-primary-color"]) { --newtab-highlight-color: var(--zen-primary-color); }
+    :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="--uc-newtab-urlbar-highlighting-border-custom-color"]) { --newtab-highlight-color: var(--uc-newtab-urlbar-highlighting-border-custom-color); }
+    /* For Workspace Color theming: 
+     *   - maybe gradient possible?
+     *   - find out which variable
+     *
+     * :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color=""]) { --newtab-highlight-color: var(); } */
+    :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="red"]) { --newtab-highlight-color: #ff0000; }
+    :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="orange"]) { --newtab-highlight-color: #ffa500; }
+    :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="yellow"]) { --newtab-highlight-color: #ffff00; }
+    :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="green"]) { --newtab-highlight-color: #008000; }
+    :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="turquoise"]) { --newtab-highlight-color: #40e0d0; }
+    :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="blue"]) { --newtab-highlight-color: #0000ff; }
+    :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="purple"]) { --newtab-highlight-color: #800080; }
+    :root:has(#theme-Newtab-Urlbar-Highlighting[uc-newtab-urlbar-highlighting-border-color="pink"]) { --newtab-highlight-color: #e21c70; }
+  
+    #urlbar[zen-newtab="true"] #urlbar-background {
+        box-shadow: 0px 0px var(--uc-newtab-urlbar-highlighting-border-blur) var(--uc-newtab-urlbar-highlighting-border-radius) var(--uc-newtab-urlbar-highlighting-border-color) !important;
+    }
 }
