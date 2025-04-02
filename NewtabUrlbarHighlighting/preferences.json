@@ -13,10 +13,6 @@
                 "label": "Custom Color",
                 "value": "--uc-newtab-urlbar-highlighting-border-custom-color"
             },
-            /* {
-                "label": "Workspace Color",
-                "value": ""
-            }, */
             {
                 "label": "Red",
                 "value": "red"
@@ -54,11 +50,12 @@
     {
         "property": "uc.newtab-urlbar-highlighting.border-custom-color",
         "label": "Custom Color (Only if 'Border Color' is set to 'Custom Color'):",
+        "type": "string",
         "placeholder": "#f76f53",
         "defaultValue": "#f76f53"
     },
     {
-        "propterty": "uc.newtab-urlbar-highlighting.border-blur",
+        "property": "uc.newtab-urlbar-highlighting.border-blur",
         "label": "Blur Radius:",
         "type": "string",
         "placeholder": "6px",
